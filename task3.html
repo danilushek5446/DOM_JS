@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <input style="width: 100px; height: 50px;" class="input">
+  <button style="width: 100px; height: 50px;" class="button">Опубликовать</button>
+
+  <script>
+    const button = document.querySelector('.button');
+
+    button.onclick = function(){
+      const input = document.querySelector('.input');
+      button.innerHTML = input.value;
+    }
+  </script>
+
+</body>
+</html>
+
